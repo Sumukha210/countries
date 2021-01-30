@@ -9,12 +9,6 @@ import {
   setSingleData__fun,
 } from "../../../Redux/Actions/DataActions";
 import Info from "./Info";
-import UniversityInfo from "./UniversityInfo";
-import {
-  getUniversities__Api,
-  getUniversities__fun,
-} from "../../../Redux/Actions/UnivertiesAction";
-import CustomSpinner from "../../common/CustomSpinner";
 
 const SpecificCountry = () => {
   const { id } = useParams();
@@ -22,10 +16,6 @@ const SpecificCountry = () => {
   const history = useHistory();
 
   const country = useSelector(({ DataReducer: { singleData } }) => singleData);
-  const universities = useSelector(({ UniversityReducer: { data } }) => data);
-  const universities__loading = useSelector(
-    ({ UniversityReducer: { loading } }) => loading
-  );
 
   //related to fetching single country starts
   useEffect(() => {
@@ -45,29 +35,8 @@ const SpecificCountry = () => {
 
   useEffect(() => {
     sessionStorage.setItem("singleCountry", JSON.stringify(country));
-  }, [universities]);
+  }, [country]);
   //related to fetching single country ends
-
-  //related to fetching universities starts
-  useEffect(() => {
-    const getSessionData = sessionStorage.getItem("university");
-    console.log("country name is", country.name);
-    if (getSessionData && JSON.parse(getSessionData).name) {
-      dispatch(getUniversities__fun(JSON.parse(getSessionData)));
-    } else {
-      country.name && dispatch(getUniversities__Api(country.name));
-    }
-
-    return () => {
-      dispatch(getUniversities__fun([]));
-      sessionStorage.removeItem("university");
-    };
-  }, [country.name]);
-
-  useEffect(() => {
-    sessionStorage.setItem("university", JSON.stringify(universities));
-  }, [universities]);
-  //related to fetching universitites ends
 
   const check = item => (country[item] ? country[item] : "unknown");
 
@@ -112,14 +81,6 @@ const SpecificCountry = () => {
           </div>
         </Col>
       </Row>
-
-      <div className="university mt-5">
-        <h1 className="university__title mb-3">Universities:-</h1>
-
-        {universities__loading && <CustomSpinner />}
-
-        <UniversityInfo />
-      </div>
     </div>
   );
 };

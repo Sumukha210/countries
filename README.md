@@ -18,9 +18,9 @@
 
 ![Home page](https://raw.githubusercontent.com/Sumukha210/countries/master/public/home-page.png "Countries home page")
 
-Countries is a country search website, it gives information about countries, along with countries information it also gives the list of universities in that country. The user's can filter countries either by name or continent. The users can also the view countries in the map. Website also support dark theme or light theme(state is stored in localStorage)
+Countries is a country search website, it gives information about countries such as flag,population etc.,. The user's can filter countries either by name or continent. Website also support dark theme or light theme(state is stored in localStorage)
 
-I'm using [React leaflet](https://react-leaflet.js.org/) to display maps, [Rest countries](https://restcountries.eu/) to get the countries information and [universities.hipolabs.com](http://universities.hipolabs.com) to get universities information.
+I'm using [React leaflet](https://react-leaflet.js.org/) to display maps, [Rest countries](https://restcountries.eu/) to get the countries information.
 
 ##### Thanks to these wonderful Api's for their free service.
 
