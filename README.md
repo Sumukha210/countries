@@ -8,7 +8,7 @@
   </h3>
  <br />
  
- ### Click here for live demo   <a href="https://recipros.netlify.app/">Recipros</a>
+ ### Click here for live demo   <a href="https://countries-website.netlify.app/">Recipros</a>
 
 </p>
 
@@ -16,7 +16,7 @@
 
 ## About The Project:-
 
-![Home page](https://raw.githubusercontent.com/Sumukha210/Recipros-website/master/public/assets/Annotation%202021-01-29%20234435.png "Countries home page")
+![Home page](https://raw.githubusercontent.com/Sumukha210/countries/master/public/home-page.png "Countries home page")
 
 Countries is a country search website, it gives information about countries, along with countries information it also gives the list of universities in that country. The user's can filter countries either by name or continent. The users can also the view countries in the map. Website also support dark theme or light theme(state is stored in localStorage)
 
@@ -24,7 +24,7 @@ I'm using [React leaflet](https://react-leaflet.js.org/) to display maps, [Rest 
 
 ##### Thanks to these wonderful Api's for their free service.
 
-##### The design is inspired from [front end mentor challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) with slight modification and new features such as maps, universities list etc.,,
+##### The design is inspired from [front end mentor challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) with slight modification and also new features such as maps, universities list are added
 
 ### Built With
 
