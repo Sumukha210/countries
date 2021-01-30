@@ -8,7 +8,7 @@
   </h3>
  <br />
  
- ### Click here for live demo   <a href="https://countries-website.netlify.app/">Recipros</a>
+ ### Click here for live demo   <a href="https://countries-website.netlify.app/">Countries</a>
 
 </p>
 
