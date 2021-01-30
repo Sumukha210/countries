@@ -1,0 +1,56 @@
+.specificPage {
+  @include container;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+
+  &__title {
+    font-size: 2rem !important;
+    font-weight: $font-medium;
+    color: $dark-blue;
+
+    @include breakpoint-down(md) {
+      margin-top: 2rem !important;
+    }
+  }
+
+  .info {
+    span:nth-child(1) {
+      font-size: 1.1rem;
+    }
+    span:nth-child(2) {
+      font-weight: $font-medium;
+    }
+
+    .borders {
+      box-shadow: $light-shadow;
+      font-size: 0.9rem !important;
+      padding: 0.6rem 2.4rem !important;
+    }
+  }
+
+  //related to university styles
+  .university {
+    margin-top: 5rem !important;
+    &__title {
+      font-size: 2rem !important;
+      font-weight: $font-medium;
+      color: $dark-blue;
+
+      @include breakpoint-down(md) {
+        margin-top: 2rem !important;
+      }
+    }
+
+    th {
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-transform: capitalize;
+      color: $dark-blue;
+    }
+
+    td {
+      font-weight: bold;
+      color: $dark-gray;
+    }
+  }
+}

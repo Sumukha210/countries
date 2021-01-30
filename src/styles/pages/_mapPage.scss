@@ -1,0 +1,10 @@
+.map {
+  margin-top: 4rem;
+
+  .leaflet-container {
+    height: 90vh;
+    width: 100%;
+
+    z-index: 1;
+  }
+}

@@ -1,0 +1,99 @@
+.home {
+  @include container;
+  padding-top: 6rem;
+
+  /*header style starts*/
+
+  //search bar
+  .input-group {
+    box-shadow: $light-shadow;
+    input[type="text"] {
+      height: 8vh;
+      outline: none !important;
+      border: none !important;
+      font-size: 1rem;
+      font-weight: $font-medium;
+
+      &:focus {
+        outline: none !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: -webkit-focus-ring-color auto 0px;
+      }
+
+      &:focus {
+        background: $bg-focus;
+      }
+    }
+
+    //span which contain icon
+    &-text {
+      background-color: $text-light;
+    }
+  }
+
+  //dropdown
+  .dropdown {
+    button {
+      box-shadow: $light-shadow;
+      height: 8vh;
+      border: none !important;
+      font-weight: $font-medium;
+      color: $dark-gray;
+      text-align: left;
+    }
+
+    @include breakpoint-up(sm) {
+      button {
+        width: 100%;
+      }
+      &-menu {
+        width: 100%;
+      }
+    }
+
+    &-item {
+      font-weight: $font-medium;
+      transition: all 0.2s ease-in;
+      cursor: pointer;
+
+      &:focus,
+      &:hover {
+        color: $text-light;
+        background: $bg-primary !important;
+      }
+    }
+  }
+
+  /*header style ends*/
+
+  /*custom card style starts*/
+
+  .card {
+    margin-bottom: 2rem;
+    cursor: pointer;
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-title {
+      color: $dark-blue !important;
+    }
+
+    &-text {
+      span:nth-child(1) {
+        font-size: 1.1rem !important;
+        color: $dark-blue;
+      }
+
+      span:nth-child(2) {
+        font-weight: $font-medium !important;
+        color: $dark-gray;
+      }
+    }
+  }
+
+  /*custom card style ends*/
+}

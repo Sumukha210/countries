@@ -1,0 +1,16 @@
+@import "./config/variables";
+@import "./config/mixins";
+@import "./config/globals";
+
+//home page styles
+@import "./pages/navbar";
+@import "./pages/home";
+
+//specific page styles
+@import "./pages/specificPage";
+
+//map page
+@import "./pages/mapPage";
+
+//dark or light mode settings
+@import "./darkLightMode";

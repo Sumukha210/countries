@@ -1,0 +1,104 @@
+.app {
+  &.darkmode {
+    min-height: 100vh;
+    background-color: $bg-very-dark-blue;
+
+    //navbar
+    .MainNav {
+      background-color: $dark-blue;
+
+      .nav {
+        &-link {
+          color: $text-light;
+        }
+      }
+    }
+
+    //search bar
+    input[type="text"] {
+      background-color: $dark-blue;
+      color: $text-light;
+
+      &::placeholder {
+        color: darken($text-light, 15%);
+      }
+
+      &:focus {
+        background-color: $dark-blue !important;
+      }
+    }
+
+    //search search icon
+    .input-group-text {
+      background-color: $dark-blue;
+      border: none;
+      color: $text-light;
+    }
+
+    //dropdown
+    .dropdown {
+      &-toggle,
+      &-menu {
+        background-color: $dark-blue;
+        color: darken($text-light, 15%);
+      }
+
+      &-item {
+        color: $text-light !important;
+      }
+    }
+
+    //card
+    .card {
+      background-color: $dark-blue;
+
+      &-title {
+        color: $text-light !important;
+      }
+
+      &-text span:nth-child(1) {
+        color: darken($text-light, 5%);
+      }
+
+      &-text span:nth-child(2) {
+        color: darken($text-light, 15%);
+      }
+    }
+
+    //specific page
+    .specificPage {
+      &__title {
+        color: $text-light;
+      }
+
+      .left {
+        color: darken($text-light, 10%);
+      }
+
+      .right {
+        color: darken($text-light, 25%) !important;
+      }
+
+      //table related styles
+      .university {
+        &__title {
+          color: $text-light !important;
+        }
+
+        th {
+          color: darken($text-light, 10%);
+          border-color: $dark-blue !important ;
+        }
+
+        td {
+          border-color: $dark-blue !important ;
+          color: darken($text-light, 25%) !important;
+        }
+
+        .message {
+          color: $text-light;
+        }
+      }
+    }
+  }
+}

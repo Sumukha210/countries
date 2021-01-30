@@ -1,0 +1,59 @@
+.MainNav {
+  background-color: $very-light-gray;
+  box-shadow: $light-shadow;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1000;
+
+  .toggleMode {
+    cursor: pointer;
+    text-transform: capitalize;
+
+    @include breakpoint-down(sm) {
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .nav {
+    width: 96%;
+    margin: auto;
+
+    .navbar {
+      //logo
+      &-brand {
+        padding-left: 26px;
+        cursor: pointer;
+        font-weight: $font-bold;
+        background: $bg-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include breakpoint-down(xs) {
+          padding-left: 0px;
+        }
+      }
+    }
+
+    //navlink
+    &-link {
+      font-weight: $font-bold;
+      font-size: 1.5rem;
+      @include breakpoint-up(sm) {
+        font-size: 1.1rem;
+        margin-right: 20px;
+      }
+    }
+
+    //active navlink
+    &-link.true {
+      background: $bg-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
