@@ -24,7 +24,7 @@ export const getUniversities__Api = countryName => async dispatch => {
 
   try {
     const { data } = await axios.get(
-      `https://universities.hipolabs.com/search?country=${countryName}`
+      `http://universities.hipolabs.com/search?country=${countryName}`
     );
 
     console.log(data);
