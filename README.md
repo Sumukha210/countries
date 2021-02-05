@@ -18,7 +18,7 @@
 
 ![Home page](https://raw.githubusercontent.com/Sumukha210/countries/master/public/home-page.png "Countries home page")
 
-Countries is a country search website, it gives information about countries such as flag,population etc.,. The user's can filter countries either by name or continent. Website also support dark theme or light theme(state is stored in localStorage)
+Countries is a countris related information search website, it gives information about countries such as flag,population etc.,. The user's can filter countries either by name or continent. Website also support dark theme or light theme(state is stored in localStorage)
 
 I'm using [React leaflet](https://react-leaflet.js.org/) to display maps, [Rest countries](https://restcountries.eu/) to get the countries information.
 
