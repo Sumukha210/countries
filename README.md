@@ -18,7 +18,11 @@
 
 ![Home page](https://raw.githubusercontent.com/Sumukha210/countries/master/public/home-page.png "videoder home page")
 
+<<<<<<< HEAD
 Videoder is a simple, easy to use online video editor. Many video editing websites on online are either bloated with ads or virus and they take much time to edit videos and also most of them are not completly free to use, whereas videos is completly free from ads, virus's and they take less time to compress, rotate, crop videos. It can also convert videos to gif's. The only problem is browser support, many old browser doesn't support ffmpeg(Wasm).
+=======
+Countries is a countries related information search website, it gives information about countries such as flag,population etc.,. The user's can filter countries either by name or continent. Website also support dark theme or light theme(state is stored in localStorage)
+>>>>>>> d4ee3000808e80aa31e045e18c1547e8f28edb0c
 
 I'm using [ffmpeg wasm](https://github.com/ffmpegwasm/ffmpeg.wasm) to edit videos.
 
