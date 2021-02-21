@@ -39,7 +39,6 @@ export const getAllData__api = () => async dispatch => {
   try {
     const { data } = await axios.get(`https://restcountries.eu/rest/v2/all`);
     dispatch(getAllData__fun(data));
-    console.log(data);
   } catch (error) {
     dispatch(error__fun(error));
   }

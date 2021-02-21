@@ -14,15 +14,13 @@ const MapPage = () => {
 
   const countries = useSelector(({ DataReducer: { data } }) => data);
 
-  console.log(latlng);
-
   return (
     <div className="map">
       {countries.length && (
         <MapContainer center={position} zoom={zoomLevel} scrollWheelZoom={true}>
           <TileLayer
-            url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+            attribution='&copy; <a href="https://carto.com/attributions">OpenStreetMap</a> contributors'
           />
 
           {countries

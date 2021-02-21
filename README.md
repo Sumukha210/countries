@@ -1,14 +1,14 @@
 <!-- PROJECT LOGO -->
 <p align="center">
 
-  <h1 align="center">Countries</h1>
+  <h1 align="center">Videoder</h1>
 
   <h3 align="center">
-   A countries search website
+   An online Video editor
   </h3>
  <br />
  
- ### Click here for live demo   <a href="https://countries-website.netlify.app/">Countries</a>
+ ### Click here for live demo   <a href="https://videoder-website.netlify.app/">Videoder</a>
 
 </p>
 
@@ -16,30 +16,28 @@
 
 ## About The Project:-
 
-![Home page](https://raw.githubusercontent.com/Sumukha210/countries/master/public/home-page.png "Countries home page")
+![Home page](https://raw.githubusercontent.com/Sumukha210/countries/master/public/home-page.png "videoder home page")
 
-Countries is a country search website, it gives information about countries such as flag,population etc.,. The user's can filter countries either by name or continent. Website also support dark theme or light theme(state is stored in localStorage)
+Videoder is a simple, easy to use online video editor. Many video editing websites on online are either bloated with ads or virus and they take much time to edit videos and also most of them are not completly free to use, whereas videos is completly free from ads, virus's and they take less time to compress, rotate, crop videos. It can also convert videos to gif's. The only problem is browser support, many old browser doesn't support ffmpeg(Wasm).
 
-I'm using [React leaflet](https://react-leaflet.js.org/) to display maps, [Rest countries](https://restcountries.eu/) to get the countries information.
+I'm using [ffmpeg wasm](https://github.com/ffmpegwasm/ffmpeg.wasm) to edit videos.
 
-##### Thanks to these wonderful Api's for their free service.
+##### Credit:- FFMPEG Wasm
 
-##### The design is inspired from [front end mentor challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) with slight modification and also new features such as maps, universities list are added
+#### Check [caniuse.com](https://caniuse.com/?search=wasm) for browser support
 
 ### Built With
 
 - #### React
-- #### Redux
 - #### React Bootstrap
 - #### Sass
 
 ### Key concepts:-
 
 - #### React hooks
-- #### Localstorage api
-- #### Debouncing
+- #### FFmpeg wasm
+- #### Drag and Drop
 - #### Axios
-- #### Leaflet maps
 
 <!-- GETTING STARTED -->
 
